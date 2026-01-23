@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🎓 Grade Calculator</h1>
+
+    <form id="course-form">
+        <label>
+            Course Name
+            <input type="text" id="course-name" required>
+        </label>
+
+        <label>
+            Grade
+            <input type="number" id="course-grade" min="0" max="100" required>
+        </label>
+
+        <label>
+            Credits
+            <input type="number" id="course-credits" min="1" required>
+        </label>
+
+        <label>
+            Year
+            <select id="course-year" required>
+                <option value="">Select Year</option>
+                <option value="1">Year 1</option>
+                <option value="2">Year 2</option>
+                <option value="3">Year 3</option>
+                <option value="4">Year 4</option>
+            </select>
+        </label>
+
+        <button type="submit">Add Course</button>
+    </form>
+
+    <ul id="course-list"></ul>
+
+    <h2>Overall GPA: <span id="gpa">0.00</span></h2>
+
+    <div id="yearly-gpa"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

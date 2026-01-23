@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ffe6eb;
+    padding: 20px;
+    color: #400018;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(255, 0, 76, 0.15);
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ffb3c1;
+    font-size: 15px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #ff4d6d;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #ff4d6d, #ff8fab);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#course-list {
+    max-width: 500px;
+    margin: 0 auto 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#course-list li {
+    background: white;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+#course-list button {
+    width: auto;
+    padding: 6px 12px;
+    background: #ff4d4d;
+    font-size: 14px;
+}
+
+#yearly-gpa {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#yearly-gpa p {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    form, #course-list, #yearly-gpa {
+        width: 95%;
+    }
+}
